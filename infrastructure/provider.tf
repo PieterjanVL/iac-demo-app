@@ -13,6 +13,12 @@ terraform {
       version = "2.6.0"
     }
   }
+  cloud{
+    organization = "AE_NV"
+    workspaces {
+      tags = [ "pieterjan-azure" ]
+    }
+  }
   required_version = ">= 1.9.0"
 }
 
@@ -20,4 +26,5 @@ terraform {
 provider "azurerm" {
   features {}
 }
+
 
