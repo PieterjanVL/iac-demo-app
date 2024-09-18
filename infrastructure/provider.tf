@@ -16,7 +16,7 @@ terraform {
   cloud{
     organization = "AE_NV"
     workspaces {
-      tags = [ "pieterjan-azure" ]
+      tags = [ "pieterjan" ]
     }
   }
   required_version = ">= 1.9.0"
